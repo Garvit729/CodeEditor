@@ -13,11 +13,7 @@ const cors = require('cors')
 
 // console.log("Hello")
 
-app.use(cors({
-  origin: "https://code-editor-two-green.vercel.app", // your Vercel frontend domain
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 app.use(cookieParser());
