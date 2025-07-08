@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth theme transitions */
+:root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* For reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  :root, body {
+    transition: none;
+  }
+}
